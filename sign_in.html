@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Varta:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sign In page</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="header__logo">
+        <h3>codit<span>R</span></h3>
+      </div>
+
+      <!-- Navigation Container -->
+      <nav class="header__nav">
+        <!-- Links -->
+        <ul class="header__nav--links">
+          <!-- li.header__nav--links__link*4>a[href="#"] -->
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </ul>
+
+        <!-- Registration -->
+        <div class="header__nav--register">
+          <a href="sign_in.html">Sign In</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+    </header>
+
+    <!-- Sign-in -->
+    <main id="sign-in-container">
+      <!-- Sign In Content -->
+      <div class="sign-in">
+        <!-- Mini title -->
+        <h6 class="sign-in__mini-title">Sign in</h6>
+
+        <!-- Title -->
+        <h2 class="sign-in__title">Join our community</h2>
+
+        <!-- Sign In Form -->
+        <form class="sign-in__form">
+          <input type="email" placeholder="E-mail" />
+
+          <input type="password" placeholder="Password" />
+
+          <fieldset class="sign-in__form--terms">
+            <input type="checkbox" />
+
+            <label for="checkbox"
+              >I agree to <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Use</a></label
+            >
+          </fieldset>
+
+          <input type="submit" value="Sign in" />
+
+          <fieldset class="sign-in__form--alternative">
+            <p class="sign-in__form--alternative__text">or contiue with</p>
+
+            <a href="#" class="sign-in__form--alternative__facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <p>Sign in with Facebook</p>
+            </a>
+
+            <a href="#" class="sign-in__form--alternative__google">
+              <i class="fa-brands fa-google"></i>
+              <p>Sign in with Google</p>
+            </a>
+          </fieldset>
+
+          <fieldset class="sign-in__form--sign-up">
+            <p>Don't have an account?</p>
+
+            <a href="#">Sign up now</a>
+          </fieldset>
+        </form>
+      </div>
+
+      <!-- Sign In Image -->
+      <div class="sign-in__img">
+        <img src="images/sign-in/sign-in.svg" alt="Sign In" />
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- Content -->
+      <div class="footer__content">
+        <!-- Motto -->
+        <div class="footer__content--motto">
+          <h2 class="footer__content--motto__text">
+            Helping you <span>maximize</span> operations management with
+            digitization
+          </h2>
+        </div>
+
+        <!-- Address -->
+        <div class="footer__content--address">
+          <h3 class="footer__content--address__title">Office</h3>
+
+          <ul>
+            <li>177A Bleecker Street</li>
+            <li>New York City, NY</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__content--contact">
+          <h3 class="footer__content--contact__title">Contacts</h3>
+
+          <ul>
+            <li>(+93) 123 4567 8900</li>
+            <li>el@el.cool</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Author -->
+      <div class="footer__author">
+        <!-- Copy Rights -->
+        <div class="footer__author--copy-rights">
+          <p>
+            &#64; 2022. All rights reserved. Developed by
+            <a
+              href="#"
+              target="_blank"
+              >Ramesh Ghimire</a
+            >
+          </p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer__author--social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- js file -->
+    <script src="app.js"></script>
+  </body>
+</html>
