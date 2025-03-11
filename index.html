@@ -24,9 +24,439 @@
     <link rel="stylesheet" href="style.css" />
     <title>CoditR</title>
 </head>
-<body>
-    
-    <script src="app.js"></script>
+<main id="main-container">
+   <!-- header -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="header__logo">
+        <h3>codit<span>R</span></h3>
+      </div>
+
+      <!-- Navigation Container -->
+      <nav class="header__nav">
+        <!-- Links -->
+        <ul class="header__nav--links">
+          <!-- li.header__nav--links__link*4>a[href="#"] -->
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </ul>
+
+        <!-- Registration -->
+        <div class="header__nav--register">
+          <a href="sign_in.html">Sign In</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Content -->
+      <div class="hero__content">
+        <!-- Main Info -->
+        <div class="hero__content--main-info">
+          <!-- Main title -->
+          <h1 id="main-title">
+            Exclusive <span>Agency</span> for Technology Solution
+          </h1>
+
+          <!-- Main Para -->
+          <p id="main-para">We are techD, a Creative Tech Agency</p>
+
+          <!-- Registration Form -->
+          <form class="hero__content--main-info__registration">
+            <!-- Email -->
+            <fieldset>
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Type your e-mail" />
+            </fieldset>
+
+            <!-- password -->
+            <fieldset>
+              <i class="fa-solid fa-user"></i>
+              <input type="password" placeholder="password" />
+            </fieldset>
+
+            <!-- submit -->
+            <input type="submit" value="Register" />
+          </form>
+        </div>
+
+        <!-- Content Image -->
+        <div class="hero__content--img">
+          <img src="images/hero/at_the_park.svg" alt="Walking the dog" />
+        </div>
+      </div>
+
+      <!-- Brands -->
+      <div class="hero__brands">
+        <img src="images/hero/instagram.png" alt="Instagram" />
+        <img src="images/hero/bootstrap.png" alt="bootstrap" />
+        <img src="images/hero/dribbble.png" alt="dribbble" />
+      </div>
+    </section>
+
+    <!-- work -->
+    <section class="work">
+      <!-- Content -->
+      <!-- .work__content>h2.work__content--title{How we work}+(p.work__content--para{lorem1})+ul.work__content--list-container>div.work__content--list-container__list*3>li*2 -->
+
+      <div class="work__content">
+        <!-- title -->
+        <h2 class="work__content--title">How we work</h2>
+
+        <!-- Para -->
+        <p class="work__content--para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Laboriosam, repellendus.
+        </p>
+
+        <!-- List container -->
+        <ul class="work__content--list-container">
+          <!-- list -->
+          <div class="work__content--list-container__list">
+            <li>1</li>
+            <li>Expand Your Reach</li>
+          </div>
+
+          <!-- list -->
+          <div class="work__content--list-container__list">
+            <li>2</li>
+            <li>Annualized Growth</li>
+          </div>
+
+          <!-- list -->
+          <div class="work__content--list-container__list">
+            <li>3</li>
+            <li>Book Your Provider</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Work Image -->
+      <div class="work__img">
+        <img src="images/work/podcast.svg" alt="Podcast" />
+      </div>
+    </section>
+
+    <!-- features -->
+    <section class="features">
+      <!-- Image -->
+      <div class="features__img">
+        <img src="images/features/tasks.svg" alt="Tasks" />
+      </div>
+
+      <!-- Content -->
+      <div class="features__content">
+        <!-- Mini title -->
+        <h6 class="features__content--mini-title">why choose us</h6>
+
+        <!-- Key Points -->
+        <div class="features__content--key-points">
+          <!-- title -->
+          <h2 class="features__content--key-points__title">Key Features</h2>
+
+          <!-- Key 1 -->
+          <div class="features__content--key-points__key-point key-point-1">
+            <i class="fa-solid fa-arrows-left-right-to-line"></i>
+
+            <h3 class="features__content--key-points__key-point--title">
+              Expand Your Reach
+            </h3>
+
+            <p class="features__content--key-points__key-point--para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+          </div>
+
+          <!-- Key 2 -->
+          <div class="features__content--key-points__key-point key-point-2">
+            <i class="fa-solid fa-arrows-left-right-to-line"></i>
+
+            <h3 class="features__content--key-points__key-point--title">
+              Annualized Growth
+            </h3>
+
+            <p class="features__content--key-points__key-point--para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+          </div>
+
+          <!-- Key 3 -->
+          <div class="features__content--key-points__key-point key-point-3">
+            <i class="fa-solid fa-arrows-left-right-to-line"></i>
+
+            <h3 class="features__content--key-points__key-point--title">
+              Book Your Providers
+            </h3>
+
+            <p class="features__content--key-points__key-point--para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+      <!-- Mini title -->
+      <h6 class="contact__mini-title">Contact us</h6>
+
+      <!-- Title -->
+      <h2 class="contact__title">
+        We will <span>be glad</span> to hear from you
+      </h2>
+
+      <!-- Form -->
+      <form class="contact__form">
+        <!-- Department -->
+        <fieldset class="contact__form--department">
+          <label for="dept">Department:</label>
+          <div><input type="radio" name="dept" id="dept" /> Support</div>
+          <div><input type="radio" name="dept" id="dept" /> Sales</div>
+        </fieldset>
+
+        <input type="text" placeholder="Subject" />
+
+        <input type="text" placeholder="Name" />
+
+        <input type="email" placeholder="E-mail" />
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Write your message"
+        ></textarea>
+
+        <fieldset class="contact__form--submit">
+          <div>
+            <input type="checkbox" class="terms" />
+            <label for="terms">I agree to terms and conditions</label>
+          </div>
+
+          <input type="submit" value="Send" />
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- team -->
+    <section class="team">
+      <!-- Mini title -->
+      <h6 class="team__mini-title">Out Team</h6>
+
+      <!-- Title -->
+      <h2 class="team__title">Meet our <span>awesome</span> team</h2>
+
+      <!-- Para -->
+      <p class="team__para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+        consequatur!
+      </p>
+
+      <!-- Cards -->
+      <div class="team__cards">
+        <!-- Card 1 -->
+        <div class="team__cards--card team__card-1">
+          <!-- Image -->
+          <img
+            class="team__cards--card__img"
+            src="images/team/woman-1.jpg"
+            alt="Woman"
+          />
+
+          <!-- Name -->
+          <h4 class="team__cards--card__name">Lucy Pine</h4>
+
+          <!-- Role -->
+          <h5 class="team__cards--card__role">CEO</h5>
+
+          <!-- Description -->
+          <p class="team__cards--card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi
+            omnis ipsa. Tenetur eius minus labore dolores, ullam itaque
+            aperiam.
+          </p>
+
+          <!-- Social Links -->
+          <div class="team__cards--card__social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="team__cards--card team__card-2">
+          <!-- Image -->
+          <img
+            class="team__cards--card__img"
+            src="images/team/man-1.jpg"
+            alt="Man"
+          />
+
+          <!-- Name -->
+          <h4 class="team__cards--card__name">Michael Morales</h4>
+
+          <!-- Role -->
+          <h5 class="team__cards--card__role">Head of Development</h5>
+
+          <!-- Description -->
+          <p class="team__cards--card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi
+            omnis ipsa. Tenetur eius minus labore dolores, ullam itaque
+            aperiam.
+          </p>
+
+          <!-- Social Links -->
+          <div class="team__cards--card__social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="team__cards--card team__card-3">
+          <!-- Image -->
+          <img
+            class="team__cards--card__img"
+            src="images/team/woman-2.jpg"
+            alt="Woman"
+          />
+
+          <!-- Name -->
+          <h4 class="team__cards--card__name">Amber Lee</h4>
+
+          <!-- Role -->
+          <h5 class="team__cards--card__role">Head of Operations</h5>
+
+          <!-- Description -->
+          <p class="team__cards--card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi
+            omnis ipsa. Tenetur eius minus labore dolores, ullam itaque
+            aperiam.
+          </p>
+
+          <!-- Social Links -->
+          <div class="team__cards--card__social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="team__cards--card team__card-4">
+          <!-- Image -->
+          <img
+            class="team__cards--card__img"
+            src="images/team/man-2.jpg"
+            alt="Man"
+          />
+
+          <!-- Name -->
+          <h4 class="team__cards--card__name">Levi Lee</h4>
+
+          <!-- Role -->
+          <h5 class="team__cards--card__role">Head of Finance</h5>
+
+          <!-- Description -->
+          <p class="team__cards--card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi
+            omnis ipsa. Tenetur eius minus labore dolores, ullam itaque
+            aperiam.
+          </p>
+
+          <!-- Social Links -->
+          <div class="team__cards--card__social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- Content -->
+      <div class="footer__content">
+        <!-- Motto -->
+        <div class="footer__content--motto">
+          <h2 class="footer__content--motto__text">
+            Helping you <span>maximize</span> operations management with
+            digitization
+          </h2>
+        </div>
+
+        <!-- Address -->
+        <div class="footer__content--address">
+          <h3 class="footer__content--address__title">Office</h3>
+
+          <ul>
+            <li>Oslo 123 N vien </li>
+            <li>Oslo oldCity</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__content--contact">
+          <h3 class="footer__content--contact__title">Contacts</h3>
+
+          <ul>
+            <li>(+47) 123 4567 8900</li>
+            <li>rg@rg.cool</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Author -->
+      <div class="footer__author">
+        <!-- Copy Rights -->
+        <div class="footer__author--copy-rights">
+          <p>
+            &#64; 2022. All rights reserved. Developed by
+            <a
+              href="#"
+              target="_blank"
+              >Ramesh Ghimire</a
+            >
+          </p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer__author--social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <!--js file -->
+  <script src="app.js"></script>
 </body>
 
 </html>
